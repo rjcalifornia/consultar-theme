@@ -5,6 +5,7 @@
 /* ***************************************
 	Typography
 *************************************** */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;700&display=swap');
 body {
 	color: #333;
 	font-size: 90%;
@@ -83,10 +84,10 @@ h5 { font-size: 0.9em; }
 h6 { font-size: 0.8em; }
 
 .elgg-heading-site, .elgg-heading-site:hover {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 2em;
 	line-height: 1.2em;
-	color: #FFF;
+	color: #222;
 	text-shadow: 1px 1px 3px #333;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 	text-decoration: none;

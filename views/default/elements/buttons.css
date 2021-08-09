@@ -20,7 +20,7 @@
 }
 .elgg-button-submit {	
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	background: #4787B8;
+	background: #00adb1;
 }
 .elgg-button-submit:hover,
 .elgg-button-submit:focus {
@@ -58,7 +58,7 @@
 	display: block;
 	position: relative;
 	margin-left: 0;
-	color: #FFF;
+	color: #222;
 	border: none;
 	box-shadow: none;
 	border-radius: 0;
@@ -66,8 +66,8 @@
 .elgg-button-dropdown:hover,
 .elgg-button-dropdown:focus,
 .elgg-button-dropdown.elgg-state-active {
-	color: #FFF;
-	background: #60B8F7;
+	color: #004a83;
+	border-bottom: 2px solid #004a83;
 	text-decoration: none;
 }
 .elgg-button-special {
@@ -94,4 +94,8 @@
 	padding: 14px 20px;
 	margin: 15px 0;
 	border-radius: 5px;
+}
+
+.pure-material-button-contained{
+	background-color: #00adb1 !important;
 }

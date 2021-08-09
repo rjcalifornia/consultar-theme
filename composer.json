@@ -1,8 +1,5 @@
 {
-    "name": "elgg/aalborg_theme",
-    "type": "elgg-plugin",
     "require": {
-        "composer/installers": ">=1.0.8"
-    },
-    "license": "GPL-2.0-only"
+        "twig/twig": "3.3"
+    }
 }

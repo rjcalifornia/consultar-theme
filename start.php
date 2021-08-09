@@ -5,17 +5,23 @@
  * @package ConsultarTheme
  */
 
+
+
 elgg_register_event_handler('init','system','consultar_theme_init');
 
 function consultar_theme_init() {
 
+	
+	elgg_register_library('elgg:twig', __DIR__ . '/lib/twig.php');
+
+	elgg_load_library('elgg:twig');
 	elgg_register_event_handler('pagesetup', 'system', 'consultar_theme_pagesetup', 1000);
 
 	// theme specific CSS
 	elgg_extend_view('elgg.css', 'consultar_theme/css');
 
-	elgg_unextend_view('page/elements/header', 'search/header');
-	elgg_extend_view('page/elements/sidebar', 'search/header', 0);
+//	elgg_unextend_view('page/elements/header', 'search/header');
+//	elgg_extend_view('page/elements/sidebar', 'search/header', 0);
 	
 	elgg_register_plugin_hook_handler('head', 'page', 'consultar_theme_setup_head');
 
@@ -23,7 +29,7 @@ function consultar_theme_init() {
 	if (!elgg_is_logged_in()) {
 		elgg_unregister_plugin_hook_handler('output:before', 'layout', 'elgg_views_add_rss_link');
 	}
-
+	
 }
 
 /**
